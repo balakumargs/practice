@@ -1,0 +1,48 @@
+<p>child works!</p>
+<div [ngSwitch]="emblem">
+  <div *ngSwitchCase="'flag'">
+    <span>
+      <img class="emblemDesign" [src]="india" />
+      <p>
+        A national flag is a flag that represents and symbolizes a given nation.
+        It is flown by the government of that nation, but can also be flown by
+        its citizens.
+      </p>
+    </span>
+  </div>
+  <div *ngSwitchCase="'tree'">
+    <span>
+      <img class="emblemDesign" [src]="banyan" />
+      <p>
+        A banyan, also spelled "banian", is a fig that develops accessory trunks
+        from adventitious prop roots, allowing the tree to spread outwards
+        indefinitely.
+      </p>
+    </span>
+  </div>
+  <div *ngSwitchCase="'animal'">
+    <span>
+      <img class="emblemDesign" [src]="tiger" />
+      <p>
+        The tiger is the largest living cat species and a member of the genus
+        Panthera. It is most recognisable for its dark vertical stripes on
+        orange fur with a white underside. An apex predator, it primarily preys
+        on ungulates, such as deer and wild boar.
+      </p>
+    </span>
+  </div>
+  <div *ngSwitchCase="'bird'">
+    <span>
+      <img class="emblemDesign" [src]="peacock" />
+      <p>
+        The Indian peafowl, also known as the common peafowl, and blue peafowl,
+        is a peafowl species native to the Indian subcontinent. It has been
+        introduced to many other countries.
+      </p>
+    </span>
+  </div>
+  <div *ngSwitchDefault>Invalid</div>
+</div>
+
+<h1>{{ emblem }}</h1>
+<!-- <button (click)="event()">Click me</button> -->
